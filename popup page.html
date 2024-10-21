@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant & Hotel Popup</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    #popup-container {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .description, .features {
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="popup-container" class="container bg-light">
+    <div class="text-center mb-3">
+      <h3 class="display-6"><b>Restaurant & Hotel</b></h3>
+    </div>
+    <hr class="bg-dark">
+    
+    <div class="mb-3">
+      <p class="text-center display-6"><b>V1:</b></p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a href="#" class="btn btn-primary w-100 mb-2">Go to Link</a>
+        <button type="button" class="btn btn-info w-100 mb-2" data-bs-toggle="modal" data-bs-target="#descriptionModalV1">
+          Description
+        </button>
+        <button type="button" class="btn btn-warning w-100 mb-2" data-bs-toggle="modal" data-bs-target="#featuresModalV1">
+          Features
+        </button>
+      </div>
+    </div>
+    
+    <div class="mb-3">
+      <p class="text-center display-6"><b>V4:</b></p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a href="#" class="btn btn-primary w-100 mb-2">Go to Link</a>
+        <button type="button" class="btn btn-info w-100 mb-2" data-bs-toggle="modal" data-bs-target="#descriptionModalV4">
+          Description
+        </button>
+        <button type="button" class="btn btn-warning w-100 mb-2" data-bs-toggle="modal" data-bs-target="#featuresModalV4">
+          Features
+        </button>
+      </div>
+    </div>
+    
+    <div class="mb-3">
+      <p class="text-center display-6"><b>V4/V5:</b></p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a href="#" class="btn btn-primary w-100 mb-2">Go to Link</a>
+        <button type="button" class="btn btn-info w-100 mb-2" data-bs-toggle="modal" data-bs-target="#descriptionModalV45">
+          Description
+        </button>
+        <button type="button" class="btn btn-warning w-100 mb-2" data-bs-toggle="modal" data-bs-target="#featuresModalV45">
+          Features
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Description Modals -->
+  <div class="modal fade" id="descriptionModalV1" tabindex="-1" aria-labelledby="descriptionModalV1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="descriptionModalV1Label">V1 Description</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Description for V1 goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="descriptionModalV4" tabindex="-1" aria-labelledby="descriptionModalV4Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="descriptionModalV4Label">V4 Description</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Description for V4 goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="descriptionModalV45" tabindex="-1" aria-labelledby="descriptionModalV45Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="descriptionModalV45Label">V4/V5 Description</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Description for V4/V5 goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Features Modals -->
+  <div class="modal fade" id="featuresModalV1" tabindex="-1" aria-labelledby="featuresModalV1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="featuresModalV1Label">V1 Features</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Features for V1 goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="featuresModalV4" tabindex="-1" aria-labelledby="featuresModalV4Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="featuresModalV4Label">V4 Features</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Features for V4 goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="featuresModalV45" tabindex="-1" aria-labelledby="featuresModalV45Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="featuresModalV45Label">V4/V5 Features</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Features for V4/V5 goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
